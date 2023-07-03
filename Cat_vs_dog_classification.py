@@ -19,10 +19,10 @@ physical_device=tf.config.expermental.list_physical_devices("GPU")
 print("Num GPUs Available:",len(physical_device))
 tf.config.experimental.set_memory_growth(physical_device[0])
 
-!curl -O https://download.microsoft.com/download/3/E/1/3E1C3F21-ECDB-4869-8368-6DEBA77B919F/kagglecatsanddogs_5340.zip
+#!curl -O https://download.microsoft.com/download/3/E/1/3E1C3F21-ECDB-4869-8368-6DEBA77B919F/kagglecatsanddogs_5340.zip
 
-!unzip -q kagglecatsanddogs_5340.zip
-!ls
+#!unzip -q kagglecatsanddogs_5340.zip
+#!ls
 
 import os
 
