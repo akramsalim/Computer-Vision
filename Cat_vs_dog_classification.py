@@ -35,17 +35,17 @@ if os.path.isdir("train/dog") is False:
   os.makedirs("valid/cat")
   os.makedirs("test/dog")
   os.makedirs("test/cat")
-  for c in random.sample(glob.glob("cat"),500):
+  for c in random.sample(glob.glob("cat"),1000):
     shutil.move(c,"train/cat")
-  for c in random.sample(glob.glob("dog"),500):
+  for c in random.sample(glob.glob("dog"),1000):
     shutil.move(c,"train/dog")
-  for c in random.sample(glob.glob("cat"),100):
+  for c in random.sample(glob.glob("cat"),200):
     shutil.move(c,"valid/cat")
-  for c in random.sample(glob.glob("cat"),100):
+  for c in random.sample(glob.glob("cat"),200):
     shutil.move(c,"valid/dog")
-  for c in random.sample(glob.glob("cat"),50):
+  for c in random.sample(glob.glob("cat"),100):
     shutil.move(c,"test/cat")
-  for c in random.sample(glob.glob("cat"),50):
+  for c in random.sample(glob.glob("cat"),100):
     shutil.move(c,"test/dog")
 os.chdir("../../")          
 
